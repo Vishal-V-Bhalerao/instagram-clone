@@ -3,6 +3,7 @@ import { FieldValue } from 'firebase/firestore';
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 import 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 // import { seedDatabase } from '../seed';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -26,4 +27,4 @@ const db = getFirestore(firebase)
 // console.log(db)
 // seedDatabase(db)
 
-export { firebase, db, FieldValue, analytics };
+export { firebase, db, FieldValue, analytics,  getAuth, createUserWithEmailAndPassword };
